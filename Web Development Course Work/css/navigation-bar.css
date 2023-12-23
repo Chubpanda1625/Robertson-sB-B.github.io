@@ -1,0 +1,64 @@
+.topnav {
+    background-color: dimgrey;
+    overflow: hidden;
+}
+
+.topnav a, .topnav .rooms-available {
+    float: left;
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover, .topnav .rooms-available:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.topnav a.active {
+    color: beige;
+    background-color: #333;
+}
+
+.topnav a.split {
+    float: right;
+    background-color: #131212;
+    color: azure;
+}
+
+.dropdown {
+    display: inline-block;
+    position:absolute
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(95, 93, 93);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #131212;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.topnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav .rooms-available {
+    background-color: transparent;
+}
